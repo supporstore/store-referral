@@ -43,39 +43,54 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "推薦店家需要什麼資格？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "推薦對象需為餐飲類型店家，並透過專屬管道簽約，部分連鎖品牌不適用。"
-      }
+      "@type": "Organization",
+      "name": "Supporstore",
+      "url": "https://supporstore.github.io/Store-referral/",
+      "logo": "https://raw.githubusercontent.com/supporstore/store-referral/refs/heads/main/og-image.jpg",
+      "sameAs": [
+        "https://www.facebook.com/",
+        "https://line.me/",
+        "https://twitter.com/"
+      ]
     },
     {
-      "@type": "Question",
-      "name": "多久會拿到獎金？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "店家成功上線並接單滿 30 天後，即可計算並發放獎金。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "可以推薦多間店家嗎？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "可以，推薦越多店家，上線滿 30 天的店家數越多，獎金就越多。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "我不是餐飲業者，也可以參加嗎？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "可以！只要你有店家人脈，無論是餐飲顧問、副業族或創業者，都能參與推薦合作計畫。"
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "推薦店家需要什麼資格？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "推薦對象需為餐飲類型店家，並透過專屬管道簽約，部分連鎖品牌不適用。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "多久會拿到獎金？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "店家成功上線並接單滿 30 天後，即可計算並發放獎金。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "可以推薦多間店家嗎？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以，推薦越多店家，上線滿 30 天的店家數越多，獎金就越多。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "我不是餐飲業者，也可以參加嗎？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以！只要你有店家人脈，無論是餐飲顧問、副業族或創業者，都能參與推薦合作計畫。"
+          }
+        }
+      ]
     }
   ]
 }
@@ -175,6 +190,30 @@
     </div>
   </section>
 
+<!-- FAQ SECTION -->
+<section class="mx-auto max-w-6xl px-4 py-12" id="faq">
+  <h2 class="text-2xl md:text-3xl font-bold mb-6">❓ 常見問題</h2>
+  <div class="space-y-6 text-gray-700">
+    <div>
+      <h3 class="font-semibold">推薦店家需要什麼資格？</h3>
+      <p>推薦對象需為餐飲類型店家，並透過專屬管道簽約，部分連鎖品牌不適用。</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">多久會拿到獎金？</h3>
+      <p>店家成功上線並接單滿 30 天後，即可計算並發放獎金。</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">可以推薦多間店家嗎？</h3>
+      <p>可以，推薦越多店家，上線滿 30 天的店家數越多，獎金就越多。</p>
+    </div>
+    <div>
+      <h3 class="font-semibold">我不是餐飲業者，也可以參加嗎？</h3>
+      <p>可以！只要你有店家人脈，無論是餐飲顧問、副業族或創業者，都能參與推薦合作計畫。</p>
+    </div>
+  </div>
+</section>
+
+
   <!-- CONTACT -->
   <section class="mx-auto max-w-6xl px-4 py-12" id="contact">
     <div class="rounded-3xl border bg-white shadow-sm p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
@@ -233,29 +272,7 @@
        分享到 X
     </a>
     </div>
-  </section>
-<!-- FAQ SECTION -->
-<section class="mx-auto max-w-6xl px-4 py-12" id="faq">
-  <h2 class="text-2xl md:text-3xl font-bold mb-6">❓ 常見問題</h2>
-  <div class="space-y-6 text-gray-700">
-    <div>
-      <h3 class="font-semibold">推薦店家需要什麼資格？</h3>
-      <p>推薦對象需為餐飲類型店家，並透過專屬管道簽約，部分連鎖品牌不適用。</p>
-    </div>
-    <div>
-      <h3 class="font-semibold">多久會拿到獎金？</h3>
-      <p>店家成功上線並接單滿 30 天後，即可計算並發放獎金。</p>
-    </div>
-    <div>
-      <h3 class="font-semibold">可以推薦多間店家嗎？</h3>
-      <p>可以，推薦越多店家，上線滿 30 天的店家數越多，獎金就越多。</p>
-    </div>
-    <div>
-      <h3 class="font-semibold">我不是餐飲業者，也可以參加嗎？</h3>
-      <p>可以！只要你有店家人脈，無論是餐飲顧問、副業族或創業者，都能參與推薦合作計畫。</p>
-    </div>
-  </div>
-</section>
+  </section>  
   <footer class="py-8 text-center text-xs text-gray-500">
     本頁為招募宣傳網頁範本。實際獎金、規則與適用範圍以官方公告與簽約條款為準。
   </footer>
