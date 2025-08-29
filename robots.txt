@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://supporstore.github.io/Store-referral/sitemap.xml
