@@ -1,95 +1,157 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="zh-Hant">
 <head>
+  <!-- 基本設定 -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UberEats 招募｜店家推薦合作計畫｜經銷夥伴招募</title>
-  <meta name="description" content="UberEats 招募經銷專頁｜推薦新店上線滿30天即可領取獎金。長期合作夥伴熱招中，餐飲顧問、創業者、副業族都適合加入！">
-  <link rel="canonical" href="https://supporstore.github.io/Store-referral/" />
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>UberEats 招募｜店家推薦合作計畫｜副業賺錢與餐飲顧問合作</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="UberEats 招募｜推薦新店上線滿30天即可領取獎金。透過店家推薦合作計畫，無論是餐飲顧問、副業族或創業者，都能參與並輕鬆副業賺錢！">
+  <meta name="keywords" content="UberEats 招募, UberEats 店家推薦, UberEats 合作夥伴, UberEats 經銷, 副業賺錢, 餐飲顧問合作, 餐飲加盟, 副業招募, 店家推薦賺獎金">
+  <meta name="author" content="Supporstore">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="UberEats 招募｜店家推薦合作計畫">
+  <meta property="og:description" content="參加 UberEats 招募推薦計畫，推薦餐飲店家成功上線滿30天即可領取獎金，適合副業賺錢與餐飲顧問合作！">
+  <meta property="og:url" content="https://supporstore.github.io/Store-referral/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://raw.githubusercontent.com/supporstore/store-referral/refs/heads/main/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/jpeg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="UberEats 招募｜店家推薦合作計畫">
+  <meta name="twitter:description" content="UberEats 招募熱招中，透過店家推薦合作，餐飲顧問、副業族都能輕鬆副業賺錢！">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/supporstore/store-referral/refs/heads/main/og-image.jpg">
+
+  <!-- FAQ + Organization JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Supporstore",
+        "url": "https://supporstore.github.io/Store-referral/",
+        "logo": "https://raw.githubusercontent.com/supporstore/store-referral/refs/heads/main/og-image.jpg",
+        "sameAs": [
+          "https://www.facebook.com/",
+          "https://line.me/",
+          "https://twitter.com/"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "推薦店家需要什麼資格？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "推薦對象需為餐飲類型店家，並透過 UberEats 招募專屬管道簽約，部分大型連鎖品牌不適用。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "多久會拿到獎金？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "店家成功上線並接單滿 30 天後，即可領取獎金。參加 UberEats 店家推薦合作計畫，最快一個月就能開始副業賺錢。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "可以推薦多間店家嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "可以！UberEats 招募不限推薦數量。推薦越多店家上線滿 30 天，獎金就越多，這是最佳的副業賺錢方式。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "我不是餐飲業者，也可以參加嗎？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "可以！無論你是餐飲顧問、創業者或副業族，只要有店家人脈，就能參加 UberEats 招募計畫，透過店家推薦合作輕鬆賺獎金。"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
+
 <body class="min-h-screen bg-gradient-to-b from-green-50 via-white to-green-50">
   <!-- NAV -->
-  <header class="sticky top-0 z-40 backdrop-blur bg-white/80 border-b">
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/70 border-b">
     <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
       <div class="flex items-center gap-2">
         <div class="w-8 h-8 rounded-xl bg-green-600"></div>
         <span class="font-semibold tracking-tight">UberEats 招募經銷專頁</span>
       </div>
-      <!-- Desktop menu -->
-      <nav class="hidden md:flex gap-6 text-sm font-medium">
-        <a href="#rules" class="hover:text-green-600">推薦資格</a>
-        <a href="#partner" class="hover:text-green-600">合作夥伴</a>
-        <a href="#faq" class="hover:text-green-600">常見問題</a>
-        <a href="#contact" class="hover:text-green-600">聯絡方式</a>
-      </nav>
-      <!-- Mobile hamburger -->
-      <button id="menuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-    </div>
-    <!-- Mobile menu -->
-    <div id="mobileMenu" class="hidden md:hidden px-4 pb-3 space-y-2">
-      <a href="#rules" class="block">推薦資格</a>
-      <a href="#partner" class="block">合作夥伴</a>
-      <a href="#faq" class="block">常見問題</a>
-      <a href="#contact" class="block">聯絡方式</a>
+      <div class="flex items-center gap-2">
+        <span class="rounded-full px-3 py-1 text-sm bg-green-100">📢 招募經銷進行中</span>
+        <a href="#contact" class="bg-green-600 text-white px-4 py-2 rounded-2xl">立即私訊</a>
+      </div>
     </div>
   </header>
 
   <!-- HERO -->
   <section class="mx-auto max-w-6xl px-4 py-14 grid lg:grid-cols-2 gap-8 items-center">
     <div class="space-y-6">
+      <div class="inline-flex items-center gap-2 rounded-full border px-3 py-1 bg-white shadow-sm">
+        <span class="text-sm">✨ UberEats 招募熱招中</span>
+      </div>
       <h1 class="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight">招募【店家推薦合作夥伴】</h1>
-      <p class="text-lg md:text-xl text-gray-600">推薦的新店 <span class="font-semibold">成功上線</span> 並 <span class="font-semibold">接單滿30天</span>，即可獲得獎金 💰</p>
-      <div class="flex gap-3 flex-wrap">
+      <p class="text-lg md:text-xl text-gray-600">
+        UberEats 招募專案中，您推薦的新店 <span class="font-semibold">成功上線</span> 並 <span class="font-semibold">接單滿 30 天</span>，即可輕鬆賺取獎金 💰
+        適合想要<span class="font-semibold">副業賺錢</span>的人或有餐飲人脈的<span class="font-semibold">餐飲顧問合作</span>！
+      </p>
+      <div class="flex flex-wrap gap-3">
+        <span class="rounded-full bg-gray-100 px-3 py-1">📌 餐飲類型</span>
+        <span class="rounded-full bg-gray-100 px-3 py-1">📝 專屬簽約管道</span>
+        <span class="rounded-full bg-gray-100 px-3 py-1">⚠️ 部分連鎖不適用</span>
+      </div>
+      <div class="flex gap-3">
         <a href="#contact" class="bg-green-600 text-white px-6 py-3 rounded-2xl">💬 立即私訊</a>
         <a href="#partner" class="border px-6 py-3 rounded-2xl">💼 了解長期合作</a>
       </div>
     </div>
-    <div class="relative">
-      <div class="relative rounded-3xl shadow-xl bg-white p-6">
-        <h2 class="flex items-center gap-2 text-green-700 font-bold mb-4">推薦流程</h2>
-        <div class="grid md:grid-cols-3 gap-4">
-          <div class="rounded-2xl border bg-white p-5 text-center">
-            <div class="text-3xl">💬</div>
-            <p class="mt-2 font-semibold">私訊洽談</p>
-          </div>
-          <div class="rounded-2xl border bg-white p-5 text-center">
-            <div class="text-3xl">🏪</div>
-            <p class="mt-2 font-semibold">推薦店家</p>
-          </div>
-          <div class="rounded-2xl border bg-white p-5 text-center">
-            <div class="text-3xl">💰</div>
-            <p class="mt-2 font-semibold">獎金入袋</p>
-          </div>
-        </div>
-      </div>
-    </div>
+  </section>
+
+  <!-- PARTNER PROGRAM -->
+  <section class="mx-auto max-w-6xl px-4 py-14 bg-gradient-to-br from-white to-green-50 rounded-3xl" id="partner">
+    <h2 class="text-2xl md:text-3xl font-bold mb-4">💼 UberEats 招募｜長期店家推薦合作夥伴</h2>
+    <p class="text-gray-600 max-w-3xl">
+      我們誠徵長期合作夥伴，加入 <strong>UberEats 招募計畫</strong>，每月穩定邀約新店家成功上線，即可獲得更高額的級距獎金。
+      特別適合 <span class="font-medium">餐飲顧問合作</span>、擁有餐飲人脈的創業者，或想透過<span class="font-medium">副業賺錢</span>的夥伴。
+    </p>
   </section>
 
   <!-- FAQ -->
   <section class="mx-auto max-w-6xl px-4 py-12" id="faq">
-    <h2 class="text-2xl md:text-3xl font-bold mb-6">❓ 常見問題</h2>
-    <div class="space-y-4">
-      <details class="p-4 rounded-xl bg-white shadow">
-        <summary class="font-semibold cursor-pointer">推薦店家需要什麼資格？</summary>
-        <p class="mt-2 text-gray-600">推薦對象需為餐飲類型店家，並透過專屬管道簽約，部分連鎖品牌不適用。</p>
-      </details>
-      <details class="p-4 rounded-xl bg-white shadow">
-        <summary class="font-semibold cursor-pointer">多久會拿到獎金？</summary>
-        <p class="mt-2 text-gray-600">店家成功上線並接單滿30天後，即可計算並發放獎金。</p>
-      </details>
-      <details class="p-4 rounded-xl bg-white shadow">
-        <summary class="font-semibold cursor-pointer">可以推薦多間店家嗎？</summary>
-        <p class="mt-2 text-gray-600">可以，推薦越多店家，上線滿30天的店家數越多，獎金就越多。</p>
-      </details>
-      <details class="p-4 rounded-xl bg-white shadow">
-        <summary class="font-semibold cursor-pointer">我不是餐飲業者，也可以參加嗎？</summary>
-        <p class="mt-2 text-gray-600">可以！只要你有店家人脈，無論是餐飲顧問、副業族或創業者，都能參與推薦合作計畫。</p>
-      </details>
+    <h2 class="text-2xl md:text-3xl font-bold mb-6">❓ UberEats 招募常見問題</h2>
+    <div class="space-y-6 text-gray-700">
+      <div>
+        <h3 class="font-semibold">推薦店家需要什麼資格？</h3>
+        <p>推薦對象需為餐飲類型店家，並透過專屬管道簽約，部分連鎖品牌不適用。</p>
+      </div>
+      <div>
+        <h3 class="font-semibold">多久會拿到獎金？</h3>
+        <p>店家成功上線並接單滿 30 天後，即可計算並發放獎金，讓您快速體驗 UberEats 招募合作的副業賺錢方式。</p>
+      </div>
+      <div>
+        <h3 class="font-semibold">可以推薦多間店家嗎？</h3>
+        <p>可以，這是 <strong>店家推薦合作</strong> 的最大優勢！推薦越多店家，上線滿 30 天的店家數越多，獎金就越多。</p>
+      </div>
+      <div>
+        <h3 class="font-semibold">我不是餐飲業者，也可以參加嗎？</h3>
+        <p>可以！只要你有店家人脈，無論是<span class="font-semibold">餐飲顧問合作</span>、副業族或創業者，都能參與 <strong>UberEats 招募計畫</strong>，一起副業賺錢。</p>
+      </div>
     </div>
   </section>
 
@@ -97,26 +159,20 @@
   <section class="mx-auto max-w-6xl px-4 py-12" id="contact">
     <div class="rounded-3xl border bg-white shadow-sm p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
       <div>
-        <h3 class="text-xl md:text-2xl font-bold">💬 有興趣嗎？私訊我聊聊</h3>
-        <p class="text-gray-600 mt-2">點擊下方按鈕與我聯繫，或填寫表單留下聯絡方式</p>
+        <h3 class="text-xl md:text-2xl font-bold">💬 想加入 UberEats 招募合作？私訊我聊聊</h3>
+        <p class="text-gray-600 mt-2">立即與我們聯繫，無論你是餐飲顧問、副業族還是創業者，都能透過店家推薦合作輕鬆賺取獎金！</p>
       </div>
-      <div class="flex gap-3 flex-wrap">
-        <a href="https://lin.ee/WPsSlZk" target="_blank" class="flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-2xl hover:bg-green-700 transition">透過 LINE 私訊</a>
-        <a href="https://forms.gle/xxxx" target="_blank" class="flex items-center gap-2 border px-6 py-3 rounded-2xl hover:bg-gray-100 transition">填寫表單</a>
+      <div>
+        <a href="https://lin.ee/WPsSlZk" target="_blank" 
+           class="flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-2xl hover:bg-green-700 transition">
+          透過 LINE 私訊
+        </a>
       </div>
     </div>
   </section>
 
   <footer class="py-8 text-center text-xs text-gray-500">
-    本頁為招募宣傳網頁範本。實際獎金、規則與適用範圍以官方公告與簽約條款為準。
+    本頁為 UberEats 招募與店家推薦合作宣傳網頁範本。實際獎金、規則與適用範圍以官方公告與簽約條款為準。
   </footer>
-
-  <script>
-    const menuBtn = document.getElementById("menuBtn");
-    const mobileMenu = document.getElementById("mobileMenu");
-    menuBtn.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
-  </script>
 </body>
 </html>
