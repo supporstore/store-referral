@@ -155,46 +155,63 @@
     </div>
   </section>
 
-  <!-- SHARE SECTION -->
-  <section class="mx-auto max-w-6xl px-4 py-8">
-    <h3 class="text-lg font-bold mb-4">📢 把好康分享給朋友！</h3>
-<p class="text-gray-600 mt-2">邀請更多人加入合作計畫，一起賺取獎金 🔥</p>
-    <div class="flex gap-3 flex-wrap">
-      <!-- Facebook -->
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https://supporstore.github.io/Store-referral/" 
-         target="_blank" 
-         class="px-4 py-2 rounded-2xl bg-blue-600 text-white hover:opacity-90">
-         分享到 Facebook
-      </a>
+ <!-- SHARE SECTION -->
+<section class="mx-auto max-w-6xl px-4 py-8">
+  <h3 class="text-lg font-bold mb-4">📢 把好康分享給朋友！</h3>
+  <p class="text-gray-600 mt-2">邀請更多人加入合作計畫，一起賺取獎金 🔥（分享後會自動附上招募圖）</p>
 
-      <!-- LINE -->
-      <a href="https://line.me/R/msg/text/?UberEats 招募經銷合作計畫🔥%0Ahttps://supporstore.github.io/Store-referral/" 
-         target="_blank" 
-         class="px-4 py-2 rounded-2xl bg-green-500 text-white hover:opacity-90">
-         分享到 LINE
-      </a>
+  <div class="flex gap-3 flex-wrap mt-4">
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://supporstore.github.io/Store-referral/" 
+       target="_blank" 
+       class="group relative px-4 py-2 rounded-2xl bg-blue-600 text-white transition transform hover:scale-105 hover:opacity-90">
+       分享到 Facebook
+       <span class="absolute -bottom-8 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 bg-black text-white text-xs rounded px-2 py-1 whitespace-nowrap transition">
+         分享後會自動附圖
+       </span>
+    </a>
 
-      <!-- Instagram (沒有官方 API，提供複製連結) -->
-      <button onclick="copyLink()" 
-         class="px-4 py-2 rounded-2xl bg-pink-500 text-white hover:opacity-90">
-         分享到 Instagram
-      </button>
+    <!-- LINE -->
+    <a href="https://line.me/R/msg/text/?UberEats 招募經銷合作計畫🔥%0Ahttps://supporstore.github.io/Store-referral/" 
+       target="_blank" 
+       class="group relative px-4 py-2 rounded-2xl bg-green-500 text-white transition transform hover:scale-105 hover:opacity-90">
+       分享到 LINE
+       <span class="absolute -bottom-8 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 bg-black text-white text-xs rounded px-2 py-1 whitespace-nowrap transition">
+         分享後會自動附圖
+       </span>
+    </a>
 
-      <!-- Threads -->
-      <a href="https://www.threads.net/intent/post?text=UberEats 招募經銷合作計畫🔥%20https://supporstore.github.io/Store-referral/" 
-         target="_blank" 
-         class="px-4 py-2 rounded-2xl bg-black text-white hover:opacity-90">
-         分享到 Threads
-      </a>
+    <!-- Instagram (無法自動附圖，只能貼連結) -->
+    <button onclick="copyLink()" 
+       class="group relative px-4 py-2 rounded-2xl bg-pink-500 text-white transition transform hover:scale-105 hover:opacity-90">
+       分享到 Instagram
+       <span class="absolute -bottom-8 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 bg-black text-white text-xs rounded px-2 py-1 whitespace-nowrap transition">
+         IG 需手動上傳圖片
+       </span>
+    </button>
 
-      <!-- Twitter -->
-      <a href="https://twitter.com/intent/tweet?url=https://supporstore.github.io/Store-referral/&text=UberEats 招募經銷合作計畫🔥" 
-         target="_blank" 
-         class="px-4 py-2 rounded-2xl bg-sky-500 text-white hover:opacity-90">
-         分享到 Twitter
-      </a>
-    </div>
-  </section>
+    <!-- Threads -->
+    <a href="https://www.threads.net/intent/post?text=UberEats 招募經銷合作計畫🔥%20https://supporstore.github.io/Store-referral/" 
+       target="_blank" 
+       class="group relative px-4 py-2 rounded-2xl bg-black text-white transition transform hover:scale-105 hover:opacity-90">
+       分享到 Threads
+       <span class="absolute -bottom-8 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 bg-black text-white text-xs rounded px-2 py-1 whitespace-nowrap transition">
+         分享後會自動附圖
+       </span>
+    </a>
+
+    <!-- Twitter -->
+    <a href="https://twitter.com/intent/tweet?url=https://supporstore.github.io/Store-referral/&text=UberEats 招募經銷合作計畫🔥" 
+       target="_blank" 
+       class="group relative px-4 py-2 rounded-2xl bg-sky-500 text-white transition transform hover:scale-105 hover:opacity-90">
+       分享到 Twitter
+       <span class="absolute -bottom-8 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 bg-black text-white text-xs rounded px-2 py-1 whitespace-nowrap transition">
+         分享後會自動附圖
+       </span>
+    </a>
+  </div>
+</section>
+
 
   <footer class="py-8 text-center text-xs text-gray-500">
     本頁為招募宣傳網頁範本。實際獎金、規則與適用範圍以官方公告與簽約條款為準。
