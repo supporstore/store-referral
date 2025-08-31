@@ -10,11 +10,11 @@
     gtag('config', 'G-16XWLGQKMY');
   </script>
 
-  <!-- 基本設定 -->
+<!-- 基本設定 -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>UberEats 招募推薦合作計畫｜推薦店家賺獎金</title>
-   <meta name="description" content="UberEats 招募推薦合作計畫，推薦餐飲店家上線並經營滿 30 天即可獲得獎金。推薦越多店家，獎金越多，適合餐飲顧問、副業族與創業者。" />
+  <meta name="description" content="UberEats 招募推薦合作計畫，推薦餐飲店家上線並經營滿 30 天即可獲得獎金。推薦越多店家，獎金越多，適合餐飲顧問、副業族與創業者。" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   <meta name="keywords" content="UberEats 招募, UberEats 經銷, UberEats 店家推薦, UberEats 合作計畫, UberEats 加盟, UberEats 獎金, 餐飲加盟, 餐飲合作, 店家推薦賺獎金, 經銷合作夥伴, 副業招募, 餐飲顧問合作">
   <meta name="author" content="Supporstore">
@@ -41,7 +41,7 @@
   <!-- CSS -->
   <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/supporstore/store-referral/refs/heads/main/%E4%B8%8B%E8%BC%89%20(10).png" />
   <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/supporstore/store-referral/refs/heads/main/%E4%B8%8B%E8%BC%89%20(10).png">
-<link rel="shortcut icon" href="https://raw.githubusercontent.com/supporstore/store-referral/refs/heads/main/%E4%B8%8B%E8%BC%89%20(10).png">
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/supporstore/store-referral/refs/heads/main/%E4%B8%8B%E8%BC%89%20(10).png">
 
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
@@ -127,15 +127,11 @@
 
 <body class="min-h-screen bg-gradient-to-b from-green-50 via-white to-green-50">
   <!-- NAV -->
-  <header class="sticky top-0 z-40 backdrop-blur bg-white/70 border-b">
-    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+  <header id="site-header" class="sticky top-0 z-40 border-b transition-all duration-500">
+    <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between transition-all duration-500">
       <div class="flex items-center gap-2">
-        <img 
-  src="https://raw.githubusercontent.com/supporstore/store-referral/refs/heads/main/Logo.jpg" 
-  class="w-8 h-8 rounded-xl" 
-  alt="icon" 
-/>
-        <span class="font-semibold tracking-tight">招募經銷專頁 UberEats</span>
+        <img id="site-logo" src="https://raw.githubusercontent.com/supporstore/store-referral/refs/heads/main/Logo.jpg" class="w-10 h-10 rounded-xl transition-all duration-500" alt="icon">
+        <span id="site-title" class="font-semibold tracking-tight text-lg transition-all duration-500">招募經銷專頁 UberEats</span>
       </div>
       <div class="flex items-center gap-2">
         <span class="rounded-full px-3 py-1 text-sm bg-green-100">📢 招募經銷進行中</span>
@@ -310,13 +306,92 @@
     本頁為招募宣傳網頁範本。實際獎金、規則與適用範圍以官方公告與簽約條款為準。
   </footer>
 
+<!-- 📜 Header 動態效果 -->
   <script>
+    const header = document.getElementById("site-header");
+    const logo = document.getElementById("site-logo");
+    const title = document.getElementById("site-title");
+
+    let lastScroll = 0;
+
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.scrollY;
+
+      // === 背景透明 + 漸層顏色隨捲動 ===
+      if (currentScroll <= 10) {
+        header.style.background = "linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0))";
+        header.classList.remove("shadow-lg", "shadow-md", "backdrop-blur-md");
+      } else {
+        let opacity = 0.7 + Math.min(currentScroll / 300, 0.3); 
+        let angle = Math.min(currentScroll / 300, 1) * 90;
+        let progress = Math.min(currentScroll / 500, 1); 
+        let greenTint = Math.floor(255 - progress * 40); 
+        let secondGreenTint = Math.floor(255 - progress * 60);
+
+        header.style.background = `linear-gradient(${angle}deg, rgba(255,${greenTint},255,${opacity}), rgba(245,${secondGreenTint},245,${opacity}))`;
+        header.classList.add("backdrop-blur-md");
+
+        if (opacity < 0.9) {
+          header.classList.add("shadow-md");
+          header.classList.remove("shadow-lg");
+        } else {
+          header.classList.add("shadow-lg");
+          header.classList.remove("shadow-md");
+        }
+      }
+
+      // === Logo & Title 縮放 ===
+      if (currentScroll > 10) {
+        logo.classList.replace("w-10", "w-8");
+        logo.classList.replace("h-10", "h-8");
+        title.classList.replace("text-lg", "text-base");
+      } else {
+        logo.classList.replace("w-8", "w-10");
+        logo.classList.replace("h-8", "h-10");
+        title.classList.replace("text-base", "text-lg");
+      }
+
+      // === 智慧隱藏效果 ===
+      if (currentScroll > lastScroll && currentScroll > 80) {
+        header.style.transform = "translateY(-100%)";
+        header.style.opacity = "0.85"; 
+      } else {
+        header.style.transform = "translateY(0)";
+        header.style.opacity = "1";
+      }
+
+      lastScroll = currentScroll;
+    });
+
+    header.style.transition = "transform 0.4s ease, opacity 0.4s ease, background 0.6s ease";
+  </script>
+
+  <!-- 📜 copyLink() + 平滑滾動 -->
+  <script>
+    // 分享到 IG 的複製連結
     function copyLink() {
       const link = "https://supporstore.github.io/Store-referral/";
       navigator.clipboard.writeText(link).then(() => {
         alert("連結已複製！打開 Instagram 發文時可以直接貼上～");
       });
     }
+
+    // 平滑滾動效果 (所有 href="#..." 的連結)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function (e) {
+        const targetId = this.getAttribute("href");
+        if (targetId.startsWith("#")) {
+          e.preventDefault();
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: "smooth",
+              block: "start"
+            });
+          }
+        }
+      });
+    });
   </script>
 </body>
 </html>
